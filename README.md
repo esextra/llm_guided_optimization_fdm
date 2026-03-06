@@ -9,10 +9,25 @@ Given part geometry and user objectives (e.g., prioritizing quality over time an
 ## Quick start
 
 ### 0) Setup
-Export your key:
+
+- OS: Ubuntu 22.04
+
+- Create a Conda environment from the provided YAML file:
+```bash
+conda env create -f <your-environment-file>.yml
+conda activate <env-name>
+```
+
+- Install PrusaSlicer (toolpath generation / slicer): Follow the official Prusa instructions here:
+https://help.prusa3d.com/article/install-prusaslicer_1903
+
+- Make sure PrusaSlicer is callable from the command line in the environment where you run the evaluator/optimizer (for example, available on your `PATH`).
+
+- Set your OpenAI API key:
 ```bash
 export OPENAI_API_KEY="sk-proj-..."
 ```
+
 
 ## Workflow
 
