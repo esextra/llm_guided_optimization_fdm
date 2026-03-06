@@ -49,7 +49,7 @@ python3 driver_reference_computation.py
 ```
 
 What this does:
-- Iterates through objects in the dataset directory
+- Iterates through objects in the sampled_dataset directory
 - Creates a per-object folder like `logs_<objectname>/`
 - Runs the print configuration evaluator, which calls the slicer/toolpath generator to obtain:
   - estimated print time
@@ -63,8 +63,8 @@ Run the optimization loop for a specific object:
 
 ```bash
 python3 gpt_guided_optimization.py \
-  --model_stl ./dataset/model/bracket.stl \
-  --profile_ini ./dataset/config/bracket.ini \
+  --model_stl ./sample_dataset/model/bracket.stl \
+  --profile_ini ./sample_dataset/config/bracket.ini \
   --refs_store ./logs_dataset/logs_bracket/refs_store.json \
   --require_refs \
   --load_bearing \
