@@ -93,6 +93,7 @@ python3 gpt_guided_optimization.py \
 ## Comparison methods
 
 - Original orientatino w/ default print parameters
+  
 Evaluate the default slicer parameters using the original (as-provided) orientation:
 
 ```bash
@@ -100,6 +101,7 @@ python3 comparison_methods/vendor_defaults.py   --model_stl ./sample_dataset/mod
 ```
 
 - Heuristic orientatino w/ default print parameters
+  
 Evaluate the default slicer parameters after reorienting with a heuristic: choose the orientation that minimizes unsupported downward area.
 
 ```bash
@@ -107,4 +109,5 @@ python3 comparison_methods/oriented_vendor_defaults.py   --model_stl ./sample_da
 ```
 
 - LLM baselines (ChatGPT 5.2. Thinking and Gemini 3 Pro)
+  
 To evaluate the ChatGPT 5.2. Thinking and Gemini 3 Pro baselines, use the provided `.txt` prompt files for each chat interface.
