@@ -96,14 +96,14 @@ python3 gpt_guided_optimization.py \
 Evaluate the default slicer parameters using the original (as-provided) orientation:
 
 ```bash
-python3 vendor_defaults.py   --model_stl ./sample_dataset/model/bracket.stl   --profile_ini ./sample_dataset/config/bracket.ini   --output_root_dir ./logs_dataset/logs_bracket/vendor_defaults   --refs_store ./logs_dataset/logs_bracket/refs_store.json   --require_refs   --load_bearing   --load_direction xz
+python3 comparison_methods/vendor_defaults.py   --model_stl ./sample_dataset/model/bracket.stl   --profile_ini ./sample_dataset/config/bracket.ini   --output_root_dir ./logs_dataset/logs_bracket/vendor_defaults   --refs_store ./logs_dataset/logs_bracket/refs_store.json   --require_refs   --load_bearing   --load_direction xz
 ```
 
 - Heuristic orientatino w/ default print parameters
 Evaluate the default slicer parameters after reorienting with a heuristic: choose the orientation that minimizes unsupported downward area.
 
 ```bash
-python3 oriented_vendor_defaults.py   --model_stl ./sample_dataset/model/bracket.stl   --profile_ini ./sample_dataset/config/bracket.ini   --output_root_dir ./logs_dataset/logs_bracket/vendor_defaults   --refs_store ./logs_dataset/logs_bracket/refs_store.json   --require_refs   --load_bearing   --load_direction xz
+python3 comparison_methods/oriented_vendor_defaults.py   --model_stl ./sample_dataset/model/bracket.stl   --profile_ini ./sample_dataset/config/bracket.ini   --output_root_dir ./logs_dataset/logs_bracket/vendor_defaults   --refs_store ./logs_dataset/logs_bracket/refs_store.json   --require_refs   --load_bearing   --load_direction xz
 ```
 
 - LLM baselines (ChatGPT 5.2. Thinking and Gemini 3 Pro)
