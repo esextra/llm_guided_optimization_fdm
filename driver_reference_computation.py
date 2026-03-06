@@ -4,7 +4,7 @@ from pathlib import Path
 
 def main():
 
-    root = Path("dataset")
+    root = Path("sample_dataset")
     logs_root = Path("logs_dataset")
     model_dir = root / "model"
     gcode_dir = root / "gcode"
