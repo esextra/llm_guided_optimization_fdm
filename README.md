@@ -14,8 +14,8 @@ Given part geometry and user objectives (e.g., prioritizing quality over time an
 
 - Create a Conda environment from the provided YAML file:
 ```bash
-conda env create -f <your-environment-file>.yml
-conda activate <env-name>
+conda env create -f environment.yml
+conda activate 3dpllm
 ```
 
 - Install PrusaSlicer (toolpath generation / slicer): Follow the official Prusa instructions here:
