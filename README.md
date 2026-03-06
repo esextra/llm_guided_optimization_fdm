@@ -54,6 +54,7 @@ python3 gpt_guided_optimization.py \
   --require_refs \
   --load_bearing \
   --load_direction xz \
+  --output_root_dir ./logs_dataset/logs_bracket/gpt_guidance \
   --use_dynamic_llm_cache \
   --live_llm_backend openai \
   --live_llm_model gpt-5.2 \
