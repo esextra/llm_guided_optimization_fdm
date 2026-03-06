@@ -27,7 +27,7 @@ This produces an `orientations.npz` file (or similarly named `.npz`) that the op
 ---
 
 ### 2) Compute time/cost reference values for the dataset
-Compute and store reference time/cost values (`refs_store.json`) for **all objects** in the dataset directory:
+Compute and store reference time/cost values (`refs_store.json`) for all objects in the dataset directory:
 
 ```bash
 python3 driver_reference_computation.py
@@ -36,7 +36,7 @@ python3 driver_reference_computation.py
 What this does:
 - Iterates through objects in the dataset directory
 - Creates a per-object folder like `logs_<objectname>/`
-- Runs the **print configuration evaluator**, which calls the slicer/toolpath generator to obtain:
+- Runs the print configuration evaluator, which calls the slicer/toolpath generator to obtain:
   - estimated print time
   - estimated filament cost
 - Saves the reference store (e.g., `refs_store.json`) in the per-object logs folder
