@@ -1,0 +1,151 @@
+{
+  "layer_height_mm": {
+    "current_value": 0.2,
+    "unit": "mm",
+    "allowed": {
+      "type": "range",
+      "min": 0.12,
+      "max": 0.25,
+      "step": 0.01
+    }
+  },
+  "infill_density_pct": {
+    "current_value": 15.0,
+    "unit": "%",
+    "allowed": {
+      "type": "range",
+      "min": 5.0,
+      "max": 50.0,
+      "step": 1.0
+    }
+  },
+  "infill_pattern": {
+    "current_value": "gyroid",
+    "unit": null,
+    "allowed": {
+      "type": "set",
+      "set": [
+        "concentric",
+        "rectilinear",
+        "grid",
+        "cubic",
+        "honeycomb",
+        "gyroid"
+      ]
+    }
+  },
+  "num_perimeters": {
+    "current_value": 2,
+    "unit": null,
+    "allowed": {
+      "type": "range",
+      "min": 2,
+      "max": 5,
+      "step": 1
+    }
+  },
+  "filament_max_volumetric_speed": {
+    "current_value": 11.5,
+    "unit": "mm^3/s",
+    "allowed": {
+      "type": "range",
+      "min": 6,
+      "max": 11.5,
+      "step": 0.1
+    }
+  },
+  "support_material": {
+    "current_value": 0,
+    "unit": null,
+    "allowed": {
+      "type": "set",
+      "set": [
+        0,
+        1
+      ]
+    }
+  },
+  "first_layer_height_mm": {
+    "current_value": 0.2,
+    "unit": "mm",
+    "allowed": {
+      "type": "range",
+      "min": 0.16,
+      "max": 0.32,
+      "step": 0.01
+    }
+  },
+  "first_layer_extrusion_width_mm": {
+    "current_value": 0.42,
+    "unit": "mm",
+    "allowed": {
+      "type": "range",
+      "min": 0.34,
+      "max": 0.63,
+      "step": 0.01
+    }
+  },
+  "elefant_foot_compensation_mm": {
+    "current_value": 0.2,
+    "unit": "mm",
+    "allowed": {
+      "type": "range",
+      "min": 0.0,
+      "max": 0.3,
+      "step": 0.01
+    }
+  },
+  "seam_position": {
+    "current_value": "aligned",
+    "unit": null,
+    "allowed": {
+      "type": "set",
+      "set": [
+        "nearest",
+        "aligned",
+        "rear",
+        "random"
+      ]
+    }
+  },
+  "orient_pair_idx": {
+    "current_value": 0,
+    "unit": null,
+    "allowed": {
+      "type": "range",
+      "min": 0,
+      "max": 744,
+      "step": 1
+    }
+  },
+  "brim_width": {
+    "current_value": 0.0,
+    "unit": "mm",
+    "allowed": {
+      "type": "range",
+      "min": 0.0,
+      "max": 8.0,
+      "step": 1
+    }
+  },
+  "top_layers": {
+    "current_value": 5,
+    "unit": null,
+    "allowed": {
+      "type": "range",
+      "min": 3,
+      "max": 10,
+      "step": 1
+    }
+  },
+  "bottom_layers": {
+    "current_value": 4,
+    "unit": null,
+    "allowed": {
+      "type": "range",
+      "min": 3,
+      "max": 10,
+      "step": 1
+    }
+  }
+}
